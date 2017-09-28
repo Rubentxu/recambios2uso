@@ -1,0 +1,16 @@
+version: '2'
+services:
+    recambios2uso-mongodb:
+        image: mongo:3.2.10
+        ports:
+            - "27017:27017"
+        command: mongos --configdb recambios2uso-mongodb-config
+    recambios2uso-mongodb-node:
+        build:
+            context: .
+            dockerfile: mongodb/MongoDB.Dockerfile
+        command: mongod --replSet rs1 --noprealloc --smallfiles
+    recambios2uso-mongodb-config:
+        image: mongo:3.2.10
+        container_name: recambios2uso-mongodb-config
+        command: mongod --noprealloc --smallfiles --configsvr --dbpath /data/db
