@@ -1,4 +1,5 @@
 # recambios2uso
+<<<<<<< HEAD
 This application was generated using JHipster 4.6.1, you can find documentation and help at [https://jhipster.github.io/documentation-archive/v4.6.1](https://jhipster.github.io/documentation-archive/v4.6.1).
 
 ## Development
@@ -148,3 +149,6 @@ To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`)
 [Protractor]: https://angular.github.io/protractor/
 [Leaflet]: http://leafletjs.com/
 [DefinitelyTyped]: http://definitelytyped.org/
+=======
+Web recambios 2º uso
+>>>>>>> 696698066465692d9db9728ce40d6a12c48127b9
