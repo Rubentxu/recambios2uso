@@ -1,0 +1,37 @@
+
+<div *ngIf="marca">
+    <h2><span jhiTranslate="recambios2UsoApp.marca.detail.title">Marca</span> {{marca.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="recambios2UsoApp.marca.nombre">Nombre</span></dt>
+        <dd>
+            <span>{{marca.nombre}}</span>
+        </dd>
+        <dt><span jhiTranslate="recambios2UsoApp.marca.modelo">Modelo</span></dt>
+        <dd>
+            <span>{{marca.modelo}}</span>
+        </dd>
+        <dt><span jhiTranslate="recambios2UsoApp.marca.tipoMotor">Tipo Motor</span></dt>
+        <dd>
+            <span>{{marca.tipoMotor}}</span>
+        </dd>
+        <dt><span jhiTranslate="recambios2UsoApp.marca.descripcion">Descripcion</span></dt>
+        <dd>
+            <span>{{marca.descripcion}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'marca/'+ marca.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

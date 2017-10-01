@@ -9,8 +9,6 @@ import {
     PasswordService,
     PasswordResetInitService,
     PasswordResetFinishService,
-    SessionsService,
-    SessionsComponent,
     PasswordStrengthBarComponent,
     RegisterComponent,
     ActivateComponent,
@@ -19,6 +17,7 @@ import {
     PasswordResetFinishComponent,
     SettingsComponent,
     SocialRegisterComponent,
+    SocialAuthComponent,
     accountState
 } from './';
 
@@ -29,17 +28,16 @@ import {
     ],
     declarations: [
         SocialRegisterComponent,
+        SocialAuthComponent,
         ActivateComponent,
         RegisterComponent,
         PasswordComponent,
         PasswordStrengthBarComponent,
         PasswordResetInitComponent,
         PasswordResetFinishComponent,
-        SessionsComponent,
         SettingsComponent
     ],
     providers: [
-        SessionsService,
         Register,
         ActivateService,
         PasswordService,

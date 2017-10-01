@@ -1,0 +1,62 @@
+<form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="myDireccionLabel" jhiTranslate="recambios2UsoApp.direccion.home.createOrEditLabel">Create or edit a Direccion</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                (click)="clear()">&times;</button>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" [hidden]="!direccion.id">
+            <label for="id" jhiTranslate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                   [(ngModel)]="direccion.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="recambios2UsoApp.direccion.calle" for="field_calle">Calle</label>
+            <input type="text" class="form-control" name="calle" id="field_calle"
+                [(ngModel)]="direccion.calle" required />
+            <div [hidden]="!(editForm.controls.calle?.dirty && editForm.controls.calle?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.calle?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="recambios2UsoApp.direccion.codigoPostal" for="field_codigoPostal">Codigo Postal</label>
+            <input type="number" class="form-control" name="codigoPostal" id="field_codigoPostal"
+                [(ngModel)]="direccion.codigoPostal"  />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="recambios2UsoApp.direccion.ciudad" for="field_ciudad">Ciudad</label>
+            <input type="text" class="form-control" name="ciudad" id="field_ciudad"
+                [(ngModel)]="direccion.ciudad" required />
+            <div [hidden]="!(editForm.controls.ciudad?.dirty && editForm.controls.ciudad?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.ciudad?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="recambios2UsoApp.direccion.provincia" for="field_provincia">Provincia</label>
+            <input type="text" class="form-control" name="provincia" id="field_provincia"
+                [(ngModel)]="direccion.provincia"  />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="recambios2UsoApp.direccion.numero" for="field_numero">Numero</label>
+            <input type="number" class="form-control" name="numero" id="field_numero"
+                [(ngModel)]="direccion.numero"  />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-ban"></span>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+            <span class="fa fa-save"></span>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

@@ -1,18 +1,18 @@
 {
   "generator-jhipster": {
     "promptValues": {
-      "packageName": "cesar.recambio2uso",
-      "nativeLanguage": "es"
+      "packageName": "cesar.cabrera",
+      "nativeLanguage": "en"
     },
-    "jhipsterVersion": "4.6.1",
+    "jhipsterVersion": "4.9.0",
     "baseName": "recambios2uso",
-    "packageName": "cesar.recambio2uso",
-    "packageFolder": "cesar/recambio2uso",
+    "packageName": "cesar.cabrera",
+    "packageFolder": "cesar/cabrera",
     "serverPort": "8080",
-    "authenticationType": "session",
+    "authenticationType": "jwt",
     "hibernateCache": "no",
     "clusteredHttpSession": false,
-    "websocket": "spring-websocket",
+    "websocket": false,
     "databaseType": "mongodb",
     "devDatabaseType": "mongodb",
     "prodDatabaseType": "mongodb",
@@ -21,26 +21,21 @@
     "serviceDiscoveryType": false,
     "buildTool": "gradle",
     "enableSocialSignIn": true,
-    "rememberMeKey": "87bfa4593c9c7615af4c87434e1ff469865b6861",
+    "enableSwaggerCodegen": true,
+    "jwtSecretKey": "481e49b23dcd3c33e5e6936315f537aaa64b9349",
     "clientFramework": "angularX",
-    "useSass": false,
+    "useSass": true,
     "clientPackageManager": "yarn",
     "applicationType": "monolith",
     "testFrameworks": [
       "protractor"
     ],
     "jhiPrefix": "jhi",
-    "otherModules": [
-      {
-        "name": "generator-jhipster-bootstrap-material-design",
-        "version": "3.5.1"
-      }
-    ],
     "enableTranslation": true,
-    "nativeLanguage": "es",
+    "nativeLanguage": "en",
     "languages": [
-      "es",
-      "en"
+      "en",
+      "es"
     ]
   }
 }

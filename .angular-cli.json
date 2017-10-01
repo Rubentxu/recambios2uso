@@ -4,7 +4,7 @@
         "name": "recambios-2-uso"
     },
     "apps": [{
-        "root": "src/main/webapp/",
+        "root": "src/main/webapp",
         "outDir": "build/www/app",
         "assets": [
             "content",
@@ -14,13 +14,13 @@
         "index": "index.html",
         "main": "app/app.main.ts",
         "polyfills": "app/polyfills.ts",
-        "test": "",
+        "test": "src/test/javascript/spec/entry.ts",
         "tsconfig": "../../../tsconfig.json",
         "prefix": "jhi",
         "mobile": false,
         "styles": [
-            "content/css/vendor.css",
-            "content/css/global.css"
+            "content/scss/vendor.scss",
+            "content/scss/global.scss"
         ],
         "scripts": []
     }],
@@ -42,17 +42,24 @@
         }
     },
     "defaults": {
-        "styleExt": "css",
+        "styleExt": "scss",
         "prefixInterfaces": false,
         "component" : {
             "inlineStyle" : true,
-            "inlineTemplate": false
+            "inlineTemplate": false,
+            "spec": false
         },
-        "spec": {
-            "component": false,
-            "directive": false,
-            "pipe": false,
-            "service": false
+        "directive" : {
+            "spec": false
+        },
+        "guard" : {
+            "spec": false
+        },
+        "pipe" : {
+            "spec": false
+        },
+        "service" : {
+            "spec": false
         }
     },
     "packageManager": "yarn"

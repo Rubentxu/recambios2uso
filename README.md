@@ -1,6 +1,5 @@
 # recambios2uso
-<<<<<<< HEAD
-This application was generated using JHipster 4.6.1, you can find documentation and help at [https://jhipster.github.io/documentation-archive/v4.6.1](https://jhipster.github.io/documentation-archive/v4.6.1).
+This application was generated using JHipster 4.9.0, you can find documentation and help at [http://www.jhipster.tech/documentation-archive/v4.9.0](http://www.jhipster.tech/documentation-archive/v4.9.0).
 
 ## Development
 
@@ -30,6 +29,26 @@ specifying a newer version in [package.json](package.json). You can also run `ya
 Add the `help` flag on any command to see how you can use it. For example, `yarn help update`.
 
 The `yarn run` command will list all of the scripts available to run for this project.
+
+### Service workers
+
+Service workers are commented by default, to enable them please uncomment the following code.
+
+* The service worker registering script in index.html
+```
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+        .register('./sw.js')
+        .then(function() { console.log('Service Worker Registered'); });
+    }
+</script>
+```
+* The copy file option in webpack-common.js
+```js
+{ from: './src/main/webapp/sw.js', to: 'sw.js' },
+```
+Note: Add the respective scripts/assets in `sw.js` that is needed to be cached.
 
 ### Managing dependencies
 
@@ -70,6 +89,15 @@ will generate few files:
     create src/main/webapp/app/my-component/my-component.component.html
     create src/main/webapp/app/my-component/my-component.component.ts
     update src/main/webapp/app/app.module.ts
+
+### Doing API-First development using swagger-codegen
+
+[Swagger-Codegen]() is configured for this application. You can generate API code from the `src/main/resources/swagger/api.yml` definition file by running:
+Then implements the generated interfaces with `@RestController` classes.
+
+To edit the `api.yml` definition file, you can use a tool such as [Swagger-Editor](). Start a local instance of the swagger-editor using docker by running: `docker-compose -f src/main/docker/swagger-editor.yml up -d`. The editor will then be reachable at [http://localhost:7742](http://localhost:7742).
+
+Refer to [Doing API-First development][] for more details.
 
 ## Building for production
 
@@ -129,14 +157,14 @@ For more information refer to [Using Docker and Docker-Compose][], this page als
 
 To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`), this will let you generate configuration files for a number of Continuous Integration systems. Consult the [Setting up Continuous Integration][] page for more information.
 
-[JHipster Homepage and latest documentation]: https://jhipster.github.io
-[JHipster 4.6.1 archive]: https://jhipster.github.io/documentation-archive/v4.6.1
+[JHipster Homepage and latest documentation]: http://www.jhipster.tech
+[JHipster 4.9.0 archive]: http://www.jhipster.tech/documentation-archive/v4.9.0
 
-[Using JHipster in development]: https://jhipster.github.io/documentation-archive/v4.6.1/development/
-[Using Docker and Docker-Compose]: https://jhipster.github.io/documentation-archive/v4.6.1/docker-compose
-[Using JHipster in production]: https://jhipster.github.io/documentation-archive/v4.6.1/production/
-[Running tests page]: https://jhipster.github.io/documentation-archive/v4.6.1/running-tests/
-[Setting up Continuous Integration]: https://jhipster.github.io/documentation-archive/v4.6.1/setting-up-ci/
+[Using JHipster in development]: http://www.jhipster.tech/documentation-archive/v4.9.0/development/
+[Using Docker and Docker-Compose]: http://www.jhipster.tech/documentation-archive/v4.9.0/docker-compose
+[Using JHipster in production]: http://www.jhipster.tech/documentation-archive/v4.9.0/production/
+[Running tests page]: http://www.jhipster.tech/documentation-archive/v4.9.0/running-tests/
+[Setting up Continuous Integration]: http://www.jhipster.tech/documentation-archive/v4.9.0/setting-up-ci/
 
 
 [Node.js]: https://nodejs.org/
@@ -149,6 +177,6 @@ To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`)
 [Protractor]: https://angular.github.io/protractor/
 [Leaflet]: http://leafletjs.com/
 [DefinitelyTyped]: http://definitelytyped.org/
-=======
-Web recambios 2º uso
->>>>>>> 696698066465692d9db9728ce40d6a12c48127b9
+[Swagger-Codegen]: https://github.com/swagger-api/swagger-codegen
+[Swagger-Editor]: http://editor.swagger.io
+[Doing API-First development]: http://www.jhipster.tech/documentation-archive/v4.9.0/doing-api-first-development/

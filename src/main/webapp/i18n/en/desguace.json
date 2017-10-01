@@ -1,0 +1,24 @@
+{
+    "recambios2UsoApp": {
+        "desguace" : {
+            "home": {
+                "title": "Desguaces",
+                "createLabel": "Create a new Desguace",
+                "createOrEditLabel": "Create or edit a Desguace"
+            },
+            "created": "A new Desguace is created with identifier {{ param }}",
+            "updated": "A Desguace is updated with identifier {{ param }}",
+            "deleted": "A Desguace is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Desguace {{ id }}?"
+            },
+            "detail": {
+                "title": "Desguace"
+            },
+            "nombre": "Nombre",
+            "email": "Email",
+            "telefono": "Telefono",
+            "movil": "Movil"
+        }
+    }
+}

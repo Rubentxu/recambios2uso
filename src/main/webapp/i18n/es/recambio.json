@@ -1,0 +1,28 @@
+{
+    "recambios2UsoApp": {
+        "recambio" : {
+            "home": {
+                "title": "Recambios",
+                "createLabel": "Crear nuevo Recambio",
+                "createOrEditLabel": "Crear o editar Recambio"
+            },
+            "created": "Un nuevo Recambio ha sido creado con el identificador {{ param }}",
+            "updated": "Un Recambio ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Recambio ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Recambio {{ id }}?"
+            },
+            "detail": {
+                "title": "Recambio"
+            },
+            "referencia": "Referencia",
+            "nombre": "Nombre",
+            "tipo": "Tipo",
+            "descripcion": "Descripcion",
+            "precio": "Precio",
+            "reclamoPublicitario": "Reclamo Publicitario",
+            "disponibilidad": "Disponibilidad",
+            "exposicion": "Exposicion"
+        }
+    }
+}

@@ -1,0 +1,37 @@
+
+<div *ngIf="desguace">
+    <h2><span jhiTranslate="recambios2UsoApp.desguace.detail.title">Desguace</span> {{desguace.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="recambios2UsoApp.desguace.nombre">Nombre</span></dt>
+        <dd>
+            <span>{{desguace.nombre}}</span>
+        </dd>
+        <dt><span jhiTranslate="recambios2UsoApp.desguace.email">Email</span></dt>
+        <dd>
+            <span>{{desguace.email}}</span>
+        </dd>
+        <dt><span jhiTranslate="recambios2UsoApp.desguace.telefono">Telefono</span></dt>
+        <dd>
+            <span>{{desguace.telefono}}</span>
+        </dd>
+        <dt><span jhiTranslate="recambios2UsoApp.desguace.movil">Movil</span></dt>
+        <dd>
+            <span>{{desguace.movil}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'desguace/'+ desguace.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

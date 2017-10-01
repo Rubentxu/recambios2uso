@@ -2,8 +2,7 @@ import { Injectable } from '@angular/core';
 import { JhiLanguageService } from 'ng-jhipster';
 
 import { Principal } from '../auth/principal.service';
-import { AuthServerProvider } from '../auth/auth-session.service';
-import { JhiTrackerService } from '../tracker/tracker.service';
+import { AuthServerProvider } from '../auth/auth-jwt.service';
 
 @Injectable()
 export class LoginService {
@@ -11,7 +10,6 @@ export class LoginService {
     constructor(
         private languageService: JhiLanguageService,
         private principal: Principal,
-        private trackerService: JhiTrackerService,
         private authServerProvider: AuthServerProvider
     ) {}
 
@@ -26,7 +24,6 @@ export class LoginService {
                     if (account !== null) {
                         this.languageService.changeLanguage(account.langKey);
                     }
-                    this.trackerService.sendActivity();
                     resolve(data);
                 });
                 return cb();
@@ -38,8 +35,14 @@ export class LoginService {
         });
     }
 
+    loginWithToken(jwt, rememberMe) {
+        return this.authServerProvider.loginWithToken(jwt, rememberMe);
+    }
+
     logout() {
-        this.authServerProvider.logout().subscribe();
+        if (this.principal.isAuthenticated()) {
+            this.authServerProvider.logout().subscribe();
+        }
         this.principal.authenticate(null);
     }
 }

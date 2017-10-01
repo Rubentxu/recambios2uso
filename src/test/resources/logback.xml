@@ -3,7 +3,7 @@
 <configuration scan="true">
     <include resource="org/springframework/boot/logging/logback/base.xml"/>
 
-    <logger name="cesar.recambio2uso" level="INFO"/>
+    <logger name="cesar.cabrera" level="INFO"/>
 
     <logger name="io.github.jhipster" level="WARN"/>
 
