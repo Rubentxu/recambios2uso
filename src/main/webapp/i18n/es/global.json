@@ -8,10 +8,10 @@
             "entities": {
                 "main": "Entidades",
                 "atributo": "Atributo",
-                "recambio": "Recambio",
-                "marca": "Marca",
                 "desguace": "Desguace",
                 "direccion": "Direccion",
+                "marca": "Marca",
+                "recambio": "Recambio",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {
@@ -133,5 +133,5 @@
         "emailexists": "Email is already in use!",
         "idexists": "A new {{entityName}} cannot already have an ID"
     },
-    "footer": "Este es el pie de página de Recambio 2º Uso."
+    "footer": "pie de página"
 }

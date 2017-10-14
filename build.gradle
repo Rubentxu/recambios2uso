@@ -35,13 +35,13 @@ apply plugin: 'io.spring.dependency-management'
 apply plugin: 'idea'
 defaultTasks 'bootRun'
 
-group = 'cesar.cabrera'
+group = 'cesar.r2uso'
 version = '0.0.1-SNAPSHOT'
 
 description = ''
 
 bootRepackage {
-   mainClass = 'cesar.cabrera.Recambios2UsoApp'
+   mainClass = 'cesar.r2uso.Recambios2UsoApp'
 }
 
 war {
@@ -49,7 +49,7 @@ war {
 }
 
 springBoot {
-    mainClass = 'cesar.cabrera.Recambios2UsoApp'
+    mainClass = 'cesar.r2uso.Recambios2UsoApp'
     executable = true
     buildInfo()
 }

@@ -2,15 +2,15 @@ import { BaseEntity } from './../../shared';
 
 export const enum Tipo {
     'FRENADO',
-    ' FILTROS',
-    ' REFRIGERACION',
-    ' SUSPENSION',
-    ' DIRECCION',
-    ' EMBRAGUE',
-    ' TRANSMISION',
-    ' DISTRIBUCION',
-    ' ESCAPE',
-    ' OTRO'
+    'FILTROS',
+    'REFRIGERACION',
+    'SUSPENSION',
+    'DIRECCION',
+    'EMBRAGUE',
+    'TRANSMISION',
+    'DISTRIBUCION',
+    'ESCAPE',
+    'OTRO'
 }
 
 export class Recambio implements BaseEntity {

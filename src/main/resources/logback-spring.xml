@@ -22,7 +22,7 @@
     </appender>
 -->
 
-    <logger name="cesar.cabrera" level="#logback.loglevel#"/>
+    <logger name="cesar.r2uso" level="#logback.loglevel#"/>
 
     <logger name="io.github.jhipster" level="#logback.loglevel#"/>
 

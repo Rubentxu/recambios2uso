@@ -28,9 +28,9 @@
             "fieldType": "String"
         }
     ],
-    "dto": "no",
-    "service": "serviceImpl",
+    "changelogDate": "20171014150420",
     "entityTableName": "marca",
-    "jpaMetamodelFiltering": false,
-    "pagination": "pagination"
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl"
 }

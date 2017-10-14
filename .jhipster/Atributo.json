@@ -17,9 +17,9 @@
             ]
         }
     ],
-    "dto": "no",
-    "service": "serviceImpl",
+    "changelogDate": "20171014150417",
     "entityTableName": "atributo",
-    "jpaMetamodelFiltering": false,
-    "pagination": "pagination"
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl"
 }

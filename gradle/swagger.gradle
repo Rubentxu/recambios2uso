@@ -14,8 +14,8 @@ swagger {
     addDynamicProperty 'java8', true
 
     additionalProperties = [
-        'modelPackage' : 'cesar.cabrera.web.api.model',
-        'apiPackage'   : 'cesar.cabrera.web.api'
+        'modelPackage' : 'cesar.r2uso.web.api.model',
+        'apiPackage'   : 'cesar.r2uso.web.api'
     ]
 
     systemProperties = [

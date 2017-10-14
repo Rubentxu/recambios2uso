@@ -10,8 +10,8 @@
                 "minlength",
                 "maxlength"
             ],
-            "fieldValidateRulesMinlength": "3",
-            "fieldValidateRulesMaxlength": "50"
+            "fieldValidateRulesMinlength": 3,
+            "fieldValidateRulesMaxlength": 50
         },
         {
             "fieldName": "nombre",
@@ -23,7 +23,7 @@
         {
             "fieldName": "tipo",
             "fieldType": "Tipo",
-            "fieldValues": "FRENADO, FILTROS, REFRIGERACION, SUSPENSION, DIRECCION, EMBRAGUE, TRANSMISION, DISTRIBUCION, ESCAPE, OTRO",
+            "fieldValues": "FRENADO,FILTROS,REFRIGERACION,SUSPENSION,DIRECCION,EMBRAGUE,TRANSMISION,DISTRIBUCION,ESCAPE,OTRO",
             "fieldValidateRules": [
                 "required"
             ]
@@ -58,9 +58,9 @@
             ]
         }
     ],
-    "dto": "no",
-    "service": "serviceImpl",
+    "changelogDate": "20171014150421",
     "entityTableName": "recambio",
-    "jpaMetamodelFiltering": false,
-    "pagination": "pagination"
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl"
 }
