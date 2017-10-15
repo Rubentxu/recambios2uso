@@ -8,7 +8,7 @@ Navbar
 
 .jh-navbar {
     background-color: #353d47;
-    padding: .2em 1em;
+    padding: 0em 0em;
 }
 
 .jh-navbar .profile-image {
@@ -52,13 +52,16 @@ Navbar
     .jh-navbar-toggler {
         display: none;
     }
+
 }
 
 @media screen and (max-width: 992px) {
     .jh-logo-container {
         width: 100%;
     }
+
 }
+
 
 .navbar-title {
     display: inline-block;
@@ -73,15 +76,48 @@ Logo styles
 }
 
 .logo .logo-img {
-    height: 45px;
     display: inline-block;
     vertical-align: middle;
-    width: 70px;
+    width: 130px;
+    height: 130px;
 }
 
 .logo-img {
     height: 100%;
-    background: url("../../../content/images/logo-jhipster.png") no-repeat center center;
+    background: url("../../../content/images/mascota.png") no-repeat center center;
     background-size: contain;
     width: 100%;
+}
+
+.container-rotate {
+    background-color: cadetblue;
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    width: 220px;
+    height: 200px;
+    position: absolute;
+    z-index: 1000;
+    top: -30px;
+    left: -30px;
+
+}
+
+@media (max-width: 600px) {
+    .container-rotate {
+       display: none;
+    }
+}
+
+.container-rotate .logo-rotate {
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    z-index: 1001;
+    padding-top: 2rem;
+
 }
