@@ -4,11 +4,10 @@ import router from './router'
 import Vuetify from 'vuetify'
 import store from './store'
 
-import 'vuetify/dist/vuetify.min.css'
 
 Vue.use(Vuetify, {
   theme: {
-    primary: "#37474F",
+    primary: "#2F343A",
     secondary: "#607D8B",
     accent: "#FF6D00",
     error: "#FF6D00",

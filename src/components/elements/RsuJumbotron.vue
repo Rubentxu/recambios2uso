@@ -1,8 +1,9 @@
 <template>
   <section class="jumbotron text-center">
     <div class="container">
+
       <h1 class="jumbotron-heading">Recambios 2º Uso</h1>
-      <p class="text-white">Olvídate de paseos hasta el desguace y de reutilizar piezas que ya han tenido uso durante años, asegúrate todas las calidades y garantías que te ofrecemos desde Repuestos para Coches. Piezas de primera mano a precios sin competencia en el mercado.
+      <p style="color: aliceblue" >Olvídate de paseos hasta el desguace y de reutilizar piezas que ya han tenido uso durante años, asegúrate todas las calidades y garantías que te ofrecemos desde Repuestos para Coches. Piezas de primera mano a precios sin competencia en el mercado.
         Contacte con nosotros, en horario de Lunes a Viernes 9:30-14:00 y de 16:00-19:30 en invierno.
 
         También puedes contactar con nosotros por teléfono: 698 28 67 14
@@ -12,6 +13,7 @@
         Muchas gracias por elegirnos, quedará satisfecho de su compra.</p>
 
     </div>
+
   </section>
 </template>
 
@@ -22,6 +24,13 @@
 </script>
 
 <style >
+  .jumbotron .container {
+    padding: 0;
+  }
+
+  .jumbotron-heading {
+    color: bisque;
+  }
   .jumbotron {
     padding-top: var(--jumbotron-padding-y);
     padding-bottom: var(--jumbotron-padding-y);
