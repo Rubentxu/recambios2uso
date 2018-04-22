@@ -1,0 +1,90 @@
+{
+  "repuestos": [
+    {
+      "nombre": "Mercury",
+      "descripcion": "Hg",
+      "number": 80,
+      "weight": 200.59,
+      "category": "transition",
+      "metal": true
+    },
+    {
+      "nombre": "Tellurium",
+      "descripcion": "Te",
+      "number": 52,
+      "weight": 127.6,
+      "category": "metalloid"
+    },
+    {
+      "nombre": "Bismuth",
+      "descripcion": "Bi",
+      "number": 83,
+      "weight": 208.980,
+      "category": "post-transition",
+      "metal": true
+    },
+    {
+      "nombre": "Lead",
+      "descripcion": "Pb",
+      "number": 82,
+      "weight": 207.2,
+      "category": "post-transition",
+      "metal": true
+    },
+    {
+      "nombre": "Gold",
+      "descripcion": "Au",
+      "number": 79,
+      "weight": 196.967,
+      "category": "transition",
+      "metal": true
+    },
+    {
+      "nombre": "Potassium",
+      "descripcion": "K",
+      "number": 19,
+      "weight": 39.0983,
+      "category": "alkali",
+      "metal": true
+    },
+    {
+      "nombre": "Sodium",
+      "descripcion": "Na",
+      "number": 11,
+      "weight": 22.99,
+      "category": "alkali",
+      "metal": true
+    },
+    {
+      "nombre": "Cadmium",
+      "descripcion": "Cd",
+      "number": 48,
+      "weight": 112.411,
+      "category": "transition",
+      "metal": true
+    },
+    {
+      "nombre": "Calcium",
+      "descripcion": "Ca",
+      "number": 20,
+      "weight": 40.078,
+      "category": "alkaline-earth",
+      "metal": true
+    },
+    {
+      "nombre": "Rhenium",
+      "descripcion": "Re",
+      "number": 75,
+      "weight": 186.207,
+      "category": "transition",
+      "metal": true
+    },
+    {
+      "nombre": "Ytterbium",
+      "descripcion": "Yb",
+      "number": 70,
+      "weight": 173.054,
+      "category": "lanthanoid"
+    }
+  ]
+}
