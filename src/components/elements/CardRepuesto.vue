@@ -9,7 +9,7 @@
     <!--</div>-->
     <!--<img class="card-img-bottom" src="https://img.webnots.com/2017/04/Bootstrap-Card-Image.png" alt="Card Image Down">-->
   <!--</div>-->
-  <v-card style="width:25rem;" class="elevation-4">
+  <v-card style="width:25rem;" class="elevation-1">
     <v-card-media src="https://vuetifyjs.com/static/doc-images/cards/desert.jpg" height="200px">
     </v-card-media>
     <v-card-title primary-title>
