@@ -3,7 +3,7 @@
         <v-container grid-list-md text-xs-center>
             <v-layout row wrap>
                 <v-flex xs6>
-                    <v-card color="blue-grey darken-2" class="white--text mcontent elevation-9">
+                    <v-card color="blue-grey darken-2" class="white--text mcontent">
                         <div primary-title>
                             <div class="headline">Contacto</div>
 
@@ -13,7 +13,7 @@
                     </v-card>
                 </v-flex>
                 <v-flex xs6>
-                    <v-card color="blue-grey darken-2" class="white--text mcontent elevation-9" >
+                    <v-card color="blue-grey darken-2" class="white--text mcontent">
                         <div primary-title>
                             <div class="headline">Direccion</div>
 
