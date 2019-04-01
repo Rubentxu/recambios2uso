@@ -1,0 +1,9 @@
+---
+- name: Instala emacs, el fantástico sistema operativo
+  become: yes
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - epel-release # necesario para instalar emacs
+    - emacs
